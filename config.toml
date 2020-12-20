@@ -1,0 +1,13 @@
+# storage engine. current supported engines: badger,bolt
+engine = "badger"
+
+# data path
+# if engine is badger, dbpath is a directory which storage LSM tree.
+# if engine is bolt, datapath is a file which contains whole data.
+dbpath = "data"
+
+
+# server configuration
+[server]
+# server listen address
+addr = ":6380"
